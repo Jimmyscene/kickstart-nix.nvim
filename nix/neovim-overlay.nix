@@ -85,7 +85,7 @@ let
             rainbow-delimiters-nvim
             scope-nvim
             lualine-lsp-progress
-            render-markdown-nvim
+            # render-markdown-nvim
             overseer-nvim
             smart-open-nvim
             tabby-nvim
@@ -126,8 +126,16 @@ let
             (mkNvimPlugin inputs.jupytext "jupytext")
             (mkNvimPlugin inputs.poetry "poetry")
             (mkNvimPlugin inputs.everforest-nvim "everforest-nvim")
-            (mkNvimPlugin inputs.cuddlefish-nvim "cuddlefish.nvim")
-            (mkNvimPlugin inputs.evergarden "evergarden")
+            ((mkNvimPlugin inputs.cuddlefish-nvim "cuddlefish.nvim").overrideAttrs {
+                nvimSkipModules = [ "cuddlefish.extras" ];
+            })
+            ((mkNvimPlugin inputs.evergarden "evergarden").overrideAttrs {
+                nvimSkipModules = [
+                    "evergarden.extras"
+                    "minidoc"
+                ];
+            })
+
             (mkNvimPlugin inputs.jellybeans-nvim "jellybeans.nvim")
             (mkNvimPlugin inputs.newpaper-nvim "newpaper.nvim")
             (mkNvimPlugin inputs.darkrose-nvim "darkrose.nvim")

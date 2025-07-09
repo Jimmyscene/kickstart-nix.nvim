@@ -47,7 +47,6 @@ local goodSchemes = {
     komau = { "ntk148v/komau.vim" },
     oldworld = { "dgox16/oldworld.nvim" },
     darkrose = { "water-sucks/darkrose.nvim" },
-    cuddlefish = { "comfysage/cuddlefish.nvim" },
     evergarden = {
         "everviolet/nvim",
         name = "evergarden",

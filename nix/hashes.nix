@@ -26,8 +26,8 @@ let
         };
         "git-conflict.nvim" = override {
             src = {
-                rev = "v2.0.0";
-                sha256 = "sha256-5BeWy0KhFG+MtWti7SFyT1jN2so47oD7JYYzbZSzndM=";
+                tag = "v2.0.0";
+                hash = "sha256-5BeWy0KhFG+MtWti7SFyT1jN2so47oD7JYYzbZSzndM=";
             };
         };
     };

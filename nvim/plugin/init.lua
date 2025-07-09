@@ -1,14 +1,14 @@
 local function require_with_opts(mod, opts) require(mod).setup(opts) end
 
-require_with_opts("render-markdown", {
-    heading = { icons = { "󰼏 ", "󰎨 " }, backgrounds = {} },
-})
 require_with_opts("zen-mode", { window = { width = 0.66 } })
 require_with_opts("ibl", {})
 require_with_opts("stickybuf", {})
 require_with_opts("jupytext", {})
 require_with_opts("oil", {})
 
+-- require("render-markdown").setup({
+--     heading = { icons = { "󰼏 ", "󰎨 " }, backgrounds = {} },
+-- })
 require("git-conflict").setup({
     default_mappings = true, -- disable buffer local mapping created by this plugin
     default_commands = true, -- disable commands created by this plugin
@@ -76,8 +76,8 @@ dap.adapters.python = function(cb, config)
     if config.request == "attach" then
         ---@diagnostic disable-next-line: undefined-field
         local port = (config.connect or config).port
-        ---@diagnostic disable-next-line: undefined-field
         local localhost = "127.0.0.1"
+        ---@diagnostic disable-next-line: undefined-field
         local host = (config.connect or config).host or localhost
         if host == "localhost" then --NB: Idk why debugpy doesnt like my localhost
             host = localhost
