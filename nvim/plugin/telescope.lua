@@ -1,38 +1,23 @@
-local Telscope = {
+local Telescope = {
   'nvim-telescope/telescope.nvim',
-  event = 'VimEnter',
-  branch = '0.1.x',
   dependencies = {
     'nvim-lua/plenary.nvim',
     'debugloop/telescope-undo.nvim',
     { -- If encountering errors, see telescope-fzf-native README for installation instructions
       'nvim-telescope/telescope-fzf-native.nvim',
 
-      -- `cond` is a condition used to determine whether this plugin should be
-      -- installed and loaded.
-      cond = function()
-        return vim.fn.executable('make') == 1
-      end,
     },
     {
       'nvim-telescope/telescope-ui-select.nvim',
-      keys = {
-        {
-          '<leader>U',
-          function()
-            require('telescope').extensions.undo.undo()
-          end,
-          { desc = 'Telescope undotree' },
-        },
-      },
     },
 
     -- Useful for getting pretty icons, but requires a Nerd Font.
     { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
   },
 }
+vim.keymap.set("n",'<leader>U', function() require('telescope').extensions.undo.undo() end, { desc = 'Telescope undotree' })
 
-function Telscope.config()
+function Telescope.config()
   local icons = require('extras.icons')
   local actions = require('telescope.actions')
   vim.api.nvim_create_autocmd('FileType', {
@@ -141,18 +126,13 @@ function Telscope.config()
     }
   end, { desc = '[S]earch [/] in Open Files' })
 end
+Telescope.config()
+
+vim.keymap.set("n",'<leader>E', function() require('telescope').extensions.smart_open.smart_open() end)
 
 local SmartOpen = {
   'danielfalk/smart-open.nvim',
   branch = '0.2.x',
-  keys = {
-    {
-      '<leader>E',
-      function()
-        require('telescope').extensions.smart_open.smart_open()
-      end,
-    },
-  },
   dependencies = {
     'kkharji/sqlite.lua',
     -- Only required if using match_algorithm fzf
@@ -161,8 +141,8 @@ local SmartOpen = {
     { 'nvim-telescope/telescope-fzy-native.nvim' },
   },
 }
+
 function SmartOpen.config()
   require('telescope').load_extension('smart_open')
 end
-
-return { Telscope, SmartOpen }
+SmartOpen.config()

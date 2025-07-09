@@ -3,6 +3,9 @@
 final: prev:
 with final.pkgs.lib;
 let
+
+    # final.nur = inputs.nur.overlays.default;
+
     pkgs = final;
 
     # Use this to create a plugin from a flake input
@@ -182,7 +185,7 @@ let
             yamlfmt
             debugpy
 
-            pkgs.nur.repos.Freed-Wu.termux-language-server
+            # nur.repos.Freed-Wu.termux-language-server
         ];
 in
 {
