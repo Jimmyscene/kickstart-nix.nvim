@@ -37,7 +37,6 @@ let
         with pkgs;
         with pkgs.vimPlugins;
         [
-            lazy-nvim
             aerial-nvim
             cmp-calc
             cmp-nvim-lsp
@@ -54,7 +53,6 @@ let
             gitsigns-nvim
             indent-blankline-nvim
             jupytext-nvim
-            lazy-nvim
             lualine-nvim
             lush-nvim
             mini-nvim
@@ -85,7 +83,7 @@ let
             rainbow-delimiters-nvim
             scope-nvim
             lualine-lsp-progress
-            # render-markdown-nvim
+            render-markdown-nvim
             overseer-nvim
             smart-open-nvim
             tabby-nvim
@@ -144,11 +142,48 @@ let
             (mkNvimPlugin inputs.vague-nvim "vague-nvim")
         ];
 
-    extraPackages = with pkgs; [
-        # language servers, etc.
-        lua-language-server
-        nil # nix LSP
-    ];
+    extraPackages =
+        with pkgs;
+        with python312Packages;
+        [
+            bash-language-server
+            black
+            docker-compose-language-service
+            dockerfile-language-server-nodejs
+            flake8
+            fzf
+            gitlab-ci-ls
+            gopls
+            isort
+            llvmPackages_19.clang-tools
+            lua-language-server
+            neocmakelsp
+            cmake-format
+            nixfmt-rfc-style
+            nil
+            nixpkgs-fmt
+            nodePackages.bash-language-server
+            nodePackages.vscode-json-languageserver
+            nodePackages.yaml-language-server
+            nodejs_24
+            pyright
+            ripgrep
+            ruff
+            cargo
+            rustfmt
+            rust-analyzer
+            shellcheck
+            shfmt
+            sql-formatter
+            stylua
+            taplo
+            terraform-ls
+            uncrustify
+            yamlfmt
+            debugpy
+
+            pkgs.nur.repos.Freed-Wu.termux-language-server
+        ];
 in
 {
     # This is the neovim derivation
