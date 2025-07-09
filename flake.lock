@@ -1,5 +1,85 @@
 {
   "nodes": {
+    "cuddlefish-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1744882641,
+        "narHash": "sha256-ZZ5kE/MikATxbtmhoXYvkxRaIgseCDAkfZse4NaWoes=",
+        "owner": "comfysage",
+        "repo": "cuddlefish.nvim",
+        "rev": "6448a5f44628dbf8677d72bd3e9ad6e89bd6a7d8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "comfysage",
+        "repo": "cuddlefish.nvim",
+        "type": "github"
+      }
+    },
+    "darkrose-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1747167419,
+        "narHash": "sha256-gQ7vQFjC81pTnxJM3sGD5CQwndw3dEJaSmOGaMGA5Fs=",
+        "owner": "water-sucks",
+        "repo": "darkrose.nvim",
+        "rev": "ac689397a8b61bb87b455400ff0da46354133fae",
+        "type": "github"
+      },
+      "original": {
+        "owner": "water-sucks",
+        "repo": "darkrose.nvim",
+        "type": "github"
+      }
+    },
+    "deadcolumn": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1747456316,
+        "narHash": "sha256-koqRo14vdoHqRfFllpyrjEZIqcC0qTCVdn4r4wH7tuA=",
+        "owner": "Bekaboo",
+        "repo": "deadcolumn.nvim",
+        "rev": "6a144a32fd847a998095d2494f152e405c6ae7cb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Bekaboo",
+        "repo": "deadcolumn.nvim",
+        "type": "github"
+      }
+    },
+    "everforest-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1746546554,
+        "narHash": "sha256-LMIGPDhKZVqriGuPR9ICVo55QdyByLXOoRK82KfsRxU=",
+        "owner": "neanias",
+        "repo": "everforest-nvim",
+        "rev": "2eb7c348f880ba93de4d98cae049c9441f5d4d49",
+        "type": "github"
+      },
+      "original": {
+        "owner": "neanias",
+        "repo": "everforest-nvim",
+        "type": "github"
+      }
+    },
+    "evergarden": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1751816391,
+        "narHash": "sha256-R8oDAsNu+Tth356s0YZgsyAzz1D7ixnsYdn+Lfapz/c=",
+        "owner": "everviolet",
+        "repo": "nvim",
+        "rev": "9f1b369a7b076c4d313e95da743b454dd6c71680",
+        "type": "github"
+      },
+      "original": {
+        "owner": "everviolet",
+        "repo": "nvim",
+        "type": "github"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -119,6 +199,54 @@
         "type": "github"
       }
     },
+    "jellybeans-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1750099909,
+        "narHash": "sha256-oBmXnSSniG1bdxczKkMT+4OKvhKb7ngw8iORLdrrVzo=",
+        "owner": "WTFox",
+        "repo": "jellybeans.nvim",
+        "rev": "362a54e2400b4fd54b1ee78261be99c301982853",
+        "type": "github"
+      },
+      "original": {
+        "owner": "WTFox",
+        "repo": "jellybeans.nvim",
+        "type": "github"
+      }
+    },
+    "jupytext": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1734575593,
+        "narHash": "sha256-7CKW+ma3y/DfddeQ2ehUMBGocsa2WFkvjjagdvQkFR4=",
+        "owner": "goerz",
+        "repo": "jupytext.vim",
+        "rev": "f15aff4515eb6a09afa0d7f41eb23be53c1e2e14",
+        "type": "github"
+      },
+      "original": {
+        "owner": "goerz",
+        "repo": "jupytext.vim",
+        "type": "github"
+      }
+    },
+    "luarocks-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1716914177,
+        "narHash": "sha256-siqpyQLpxWYfZKxoPrflnCg8V5oTQcIXKrezjCgZfMM=",
+        "owner": "vhyrro",
+        "repo": "luarocks.nvim",
+        "rev": "1db9093915eb16ba2473cfb8d343ace5ee04130a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vhyrro",
+        "repo": "luarocks.nvim",
+        "type": "github"
+      }
+    },
     "luvit-meta": {
       "flake": false,
       "locked": {
@@ -132,6 +260,22 @@
       "original": {
         "owner": "Bilal2453",
         "repo": "luvit-meta",
+        "type": "github"
+      }
+    },
+    "newpaper-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1741553606,
+        "narHash": "sha256-MkSBr4ebgR7TZrtSkx2/G8a7uuMTTCv2cZnroBaeldU=",
+        "owner": "yorik1984",
+        "repo": "newpaper.nvim",
+        "rev": "07357256a29d9e4bd694dd81e6c1754695890ec6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yorik1984",
+        "repo": "newpaper.nvim",
         "type": "github"
       }
     },
@@ -195,11 +339,72 @@
         "type": "github"
       }
     },
+    "nordern-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1750004311,
+        "narHash": "sha256-y2XRut5nWMccCXYwfllzWwFwlnqVwQtWlBsV5/Dwn1c=",
+        "owner": "fcancelinha",
+        "repo": "nordern.nvim",
+        "rev": "d771d8dbd74f5c248d53a7dfd33247e59b631d9f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fcancelinha",
+        "repo": "nordern.nvim",
+        "type": "github"
+      }
+    },
+    "poetry": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1656838625,
+        "narHash": "sha256-hkca9EIa567fdJB+HPz4vxzfaH08tV8cY2FCRaRc05I=",
+        "owner": "karloskar",
+        "repo": "poetry-nvim",
+        "rev": "79626bec95ed3c75fcbb49b4d31e7d886c221918",
+        "type": "github"
+      },
+      "original": {
+        "owner": "karloskar",
+        "repo": "poetry-nvim",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
+        "cuddlefish-nvim": "cuddlefish-nvim",
+        "darkrose-nvim": "darkrose-nvim",
+        "deadcolumn": "deadcolumn",
+        "everforest-nvim": "everforest-nvim",
+        "evergarden": "evergarden",
         "flake-utils": "flake-utils",
         "gen-luarc": "gen-luarc",
-        "nixpkgs": "nixpkgs_2"
+        "jellybeans-nvim": "jellybeans-nvim",
+        "jupytext": "jupytext",
+        "luarocks-nvim": "luarocks-nvim",
+        "newpaper-nvim": "newpaper-nvim",
+        "nixpkgs": "nixpkgs_2",
+        "nordern-nvim": "nordern-nvim",
+        "poetry": "poetry",
+        "stickybuf": "stickybuf",
+        "vague-nvim": "vague-nvim"
+      }
+    },
+    "stickybuf": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1741152776,
+        "narHash": "sha256-tMP91R7da79K7035lkVzVQ59xe8uG46qeH3uQU0iQLk=",
+        "owner": "stevearc",
+        "repo": "stickybuf.nvim",
+        "rev": "0c1e5f1a3eb36eea2cea57083828269cc62c58e4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stevearc",
+        "repo": "stickybuf.nvim",
+        "type": "github"
       }
     },
     "systems": {
@@ -214,6 +419,22 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "vague-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1751825544,
+        "narHash": "sha256-ebsnNfBceAMoX4Krpa/i290Ki9qzTI0KYydCfFq0MIE=",
+        "owner": "vague2k",
+        "repo": "vague.nvim",
+        "rev": "adc3838cbbcf26aaec2fb89e6ed59cb93266a1b7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vague2k",
+        "repo": "vague.nvim",
         "type": "github"
       }
     }
