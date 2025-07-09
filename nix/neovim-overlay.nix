@@ -186,7 +186,8 @@ let
             debugpy
             devpod # for remote-nvim
 
-            nur.repos.Freed-Wu.termux-language-server
+            # TODO: please
+            # nur.repos.Freed-Wu.termux-language-server
         ];
 in
 {
