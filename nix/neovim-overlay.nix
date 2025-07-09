@@ -184,8 +184,9 @@ let
             uncrustify
             yamlfmt
             debugpy
+            devpod # for remote-nvim
 
-            # nur.repos.Freed-Wu.termux-language-server
+            nur.repos.Freed-Wu.termux-language-server
         ];
 in
 {
