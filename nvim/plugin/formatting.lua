@@ -1,7 +1,8 @@
 local AutoFormat = { -- Autoformat
     "stevearc/conform.nvim",
     lazy = false,
-    opts = {
+    config = function()
+    require("conform").setup({
         notify_on_error = true,
         format_on_save = function(bufnr)
             -- Disable "format_on_save lsp_fallback" for languages that don't
@@ -51,7 +52,8 @@ local AutoFormat = { -- Autoformat
             xml = { "xmlformat" },
             yaml = { "yamlfmt" },
         },
-    },
+    })
+    end
 }
 vim.keymap.set("n","<leader>F", function() require("conform").format({ async = true, lsp_fallback = true }) end, {desc = "[F]ormat buffer"})
 AutoFormat.config()
