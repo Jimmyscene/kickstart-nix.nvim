@@ -53,5 +53,5 @@ local AutoFormat = { -- Autoformat
         },
     },
 }
-vim.keymap.set("n","<leader>F", function() require("conform").format({ async = true, lsp_fallback = true }) end, {desc = "[F]ormat buffer"}))
+vim.keymap.set("n","<leader>F", function() require("conform").format({ async = true, lsp_fallback = true }) end, {desc = "[F]ormat buffer"})
 AutoFormat.config()
